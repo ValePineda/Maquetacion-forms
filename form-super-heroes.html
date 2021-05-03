@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style-form-super-heroes.css" />
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <div class="title-descuento">
+      <p>20% de descuento en todos los productos!</p>
+    </div>
+    <header>
+      <div class="title">
+        <img src="./img/tienda.png" alt="Imagen de tienda online" />
+        <h1>Tienda de cards</h1>
+      </div>
+      <nav>
+        <ul class="list-menu">
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="./register.html">Registrarme </a>
+          </li>
+          <li>
+            <a href="./index.html">Ingresar</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="title-form">Añadí tu super!</h2>
+        <p class="text-form">
+          Agregá tu personaje favorito completando las opciones.
+        </p>
+
+        <form action="./super-cards.html">
+          <div class="row-1">
+            <div class="col col-left">
+              <label for="nombre" class="label-form label-required"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                class="input-text"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="especie" class="label-form label-required"
+                >Especie</label
+              >
+              <select
+                name="especie"
+                id="especie"
+                class="select-customer"
+                required
+              >
+                <option value="" disabled selected hidden>Especie</option>
+                <option value="desconocida">Desconocida</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row-2">
+            <div class="col col-left">
+              <label for="fecha" class="label-form label-date">Fecha</label>
+              <input type="date" name="fecha" id="fecha" class="input-text" />
+            </div>
+            <div class="col">
+              <label for="" class="label-form label-customized"
+                >Agregar foto</label
+              >
+
+              <div class="file-customized">
+                <label for="foto">Seleccionar archivo</label>
+                <input type="file" name="foto" id="foto" class="input-file" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row-3">
+            <div class="col col-left">
+              <textarea placeholder="Descripción"></textarea>
+            </div>
+
+            <div class="col">
+              <div class="col-power">
+                <label class="label-form label-power">Poderes</label>
+                <div class="check-customized">
+                  <input type="checkbox" name="poderUno" id="poderUno" />
+                  <label for="poderUno">Volar</label>
+                </div>
+
+                <div class="check-customized">
+                  <input type="checkbox" name="poderDos" id="poderDos" />
+                  <label for="poderDos">Superinteligencia</label>
+                </div>
+
+                <div class="check-customized">
+                  <input type="checkbox" name="poderTres" id="poderTres" />
+                  <label for="poderTres">Vista de rayo laser</label>
+                </div>
+
+                <div class="check-customized">
+                  <input type="checkbox" name="poderCuatro" id="poderCuatro" />
+                  <label for="poderCuatro">Billetera gorda</label>
+                </div>
+              </div>
+
+              <hr />
+
+              <div>
+                <label class="label-form label-type-heroe"
+                  >Tipo de personaje</label
+                >
+                <div class="radio-customized">
+                  <input
+                    type="radio"
+                    name="personaje"
+                    value="heroes"
+                    id="heroes"
+                  />
+                  <label for="heroes">Héroe / Heroina</label>
+                </div>
+
+                <div class="radio-customized">
+                  <input
+                    type="radio"
+                    name="personaje"
+                    value="villanos"
+                    id="villanos"
+                  />
+                  <label for="villanos">Villano / Villana</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-submit">
+            <input type="submit" value="Añadir" class="inputs-button" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Todos los derechos reservados a FRONT END 1</h3>
+    </footer>
+  </body>
+</html>

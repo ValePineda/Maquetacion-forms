@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+footer,
+.title-descuento {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 4px 7px 0px rgb(0 0 0 / 20%);
+}
+
+.title-descuento {
+  background-color: #1cd1b0;
+  height: 30px;
+  font-size: 21px;
+  position: relative;
+}
+
+.title-descuento p {
+  top: 4px;
+  font-size: 17px;
+}
+
+.title {
+  background-color: #00669f;
+  color: white;
+  height: 80px;
+}
+
+.title h1 {
+  font-weight: 200;
+  top: 10px;
+  display: inline-block;
+  top: -23px;
+  left: -4px;
+  font-size: 30px;
+}
+
+.title-descuento p,
+.title h1 {
+  margin-left: 20px;
+  position: relative;
+}
+
+.title img {
+  position: relative;
+  left: 8px;
+}
+
+nav {
+  height: 40px;
+  text-align: end;
+  padding-top: 10px;
+  background-color: #001d2d;
+  color: white;
+}
+
+.list-menu li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.list-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-menu a:hover {
+  color: #1cd1b0;
+}
+
+main {
+  margin-bottom: 162px;
+  margin-top: 21px;
+}
+
+section {
+  width: 800px;
+  height: 660px;
+  margin: auto;
+  background-color: #00669f;
+  font-family: "Inter", sans-serif;
+  border-radius: 40px;
+}
+
+section form {
+  width: fit-content;
+  margin: auto;
+  color: white;
+}
+
+section .title-form,
+.text-form {
+  text-align: center;
+  color: white;
+}
+
+section .title-form {
+  padding-top: 11px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+section .text-form {
+  margin-bottom: 18px;
+  font-size: 15.6px;
+}
+
+.row-1,
+.row-2 {
+  height: 89px;
+}
+
+.row-2 .input-file {
+  display: none;
+}
+
+.row-2 .col .label-customized {
+  margin-bottom: 23px;
+}
+
+.row-2 .file-customized {
+  width: 197px;
+  height: 32px;
+  padding-top: 4px;
+  padding-left: 6px;
+  border-radius: 5px;
+  background-color: #cecece;
+  color: black;
+}
+
+.file-customized label {
+  font-size: 13px;
+}
+
+.file-customized label {
+  cursor: pointer;
+}
+
+.row-3 textarea {
+  width: 290px;
+  height: 207px;
+  margin-top: 57px;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  outline: none;
+}
+
+.row-3 textarea:focus {
+  border: solid #1cd1b0 2px;
+}
+
+
+.col {
+  display: inline-block;
+  width: 290px;
+  position: relative;
+}
+
+.col-left {
+  margin-right: 16px;
+}
+
+.col .input-text,
+select {
+  width: 290px;
+  height: 54px;
+  border-radius: 15px;
+  border: 0px;
+  padding: 0px 12px 0px 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+.col .input-text:focus{
+  border: solid #1cd1b0 2px;
+}
+
+.col select:focus {
+  border: solid #1cd1b0 2px;
+}
+
+
+.col .label-form {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 18px;
+}
+
+.col .label-required::before {
+  content: "*";
+}
+
+.select-customer {
+  appearance: none;
+  background-image: url("../img/Vector\ 1.png"),
+    linear-gradient(to bottom, white 0%, white 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  cursor: pointer;
+  padding-left: 10px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.col .label-date {
+  margin-top: 27px;
+}
+
+.col .label-power {
+  margin-bottom: 11px;
+}
+
+.col-power {
+  padding-bottom: 8px;
+}
+
+.file-customized:hover {
+  background-color: gray;
+  color: #cecece;
+}
+
+.check-customized label,
+.radio-customized label {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.check-customized input,
+.radio-customized input {
+  display: none;
+}
+
+.check-customized label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  display: inline-block;
+  background-image: url("../img/checkbox-uncheck.png");
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.check-customized input:checked + label::before {
+  background-image: url("../img/checkbox-check.png");
+}
+
+.radio-customized label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 11px;
+  cursor: pointer;
+  display: inline-block;
+  background-image: url("../img/radio-uncheck.png");
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.radio-customized input:checked + label::before {
+  background-image: url("../img/radio-check.png");
+}
+
+.col .label-type-heroe {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.radio-customized label {
+  font-size: 14px;
+}
+
+.button-submit {
+  text-align: center;
+  margin-top: 26px;
+}
+
+.button-submit input:hover {
+  background-color: #001d2d;
+  cursor: pointer;
+  color: white;
+}
+
+.button-submit .inputs-button {
+  width: 360px;
+  height: 63px;
+  font-size: 31px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  border-radius: 17px;
+  border: 0px;
+  background-color: #1cd1b0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #00669f;
+  height: 61px;
+  width: 100%;
+}
+
+footer h3 {
+  position: relative;
+  top: 19px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}

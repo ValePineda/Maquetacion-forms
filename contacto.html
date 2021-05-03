@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style-contacto.css" />
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <div class="title-descuento">
+      <p>20% de descuento en todos los productos!</p>
+    </div>
+    <header>
+      <div class="title">
+        <img src="./img/tienda.png" alt="Imagen de tienda online" />
+        <h1>Tienda de cards</h1>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Contacto</h2>
+        <form action="./super-cards.html" method="GET">
+          <div>
+            <label for="nombreYApellido"></label>
+            <input
+              type="text"
+              name="nombreYApellido"
+              id="nombreYApellido"
+              placeholder="Nombre y Apellido"
+              class="inputs-form"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo Electrónico"
+              class="inputs-form"
+              required
+            />
+          </div>
+
+          <div>
+            <textarea></textarea>
+          </div>
+
+          <div>
+            <input type="reset" value="Resetear" class="inputs-button input-reset"/>
+            <input type="submit" value="Entrar" class="inputs-button input-submit" />
+          </div>
+          <div>
+            <a href="./index.html">
+              <p>¿Ya tenés una cuenta? <span>Ingresá</span></p>
+            </a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Todos los derechos reservados a FRONT END 1</h3>
+    </footer>
+  </body>
+</html>

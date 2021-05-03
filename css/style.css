@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+.title-descuento {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 4px 7px 0px rgb(0 0 0 / 20%);
+}
+
+.title-descuento {
+  background-color: #1cd1b0;
+  height: 30px;
+  font-size: 21px;
+  position: relative;
+}
+
+.title-descuento p {
+  top: 4px;
+  font-size: 17px;
+}
+
+.title {
+  background-color: #00669f;
+  color: white;
+  height: 80px;
+}
+
+.title h1 {
+  font-weight: 200;
+  top: 10px;
+  display: inline-block;
+  top: -23px;
+  left: -4px;
+  font-size: 30px;
+}
+
+.title-descuento p,
+.title h1 {
+  margin-left: 20px;
+  position: relative;
+}
+
+.title img {
+  position: relative;
+  left: 8px;
+}
+
+main {
+  margin-bottom: 162px;
+}
+
+section {
+  width: fit-content;
+  margin: auto;
+  margin-top: 140px;
+  position: relative;
+  font-family: "Karla", sans-serif;
+}
+
+section h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 72px;
+  margin-bottom: 48px;
+}
+
+.inputs-form {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1.9px solid;
+  font-size: 17px;
+}
+
+::placeholder {
+  color: black;
+  font-size: 17px;
+}
+
+.inputs-form,
+.inputs-button {
+  width: 620px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.inputs-button {
+  height: 51px;
+  margin-top: 20px;
+  background-color: #1cd1b0;
+  color: black;
+  border-radius: 23.011px;
+  border-style: none;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.inputs-button:hover {
+  cursor: pointer;
+  background-color: #001D2D;
+  color: white;
+}
+
+section a {
+  text-decoration: none;
+  color: black;
+}
+
+section p {
+  font-size: 21px;
+  text-align: center;
+  font-weight: 400;
+}
+
+section p span {
+  color: #00669f;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #00669f;
+  height: 61px;
+  width: 100%;
+}
+
+footer h3 {
+  position: relative;
+  top: 19px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}

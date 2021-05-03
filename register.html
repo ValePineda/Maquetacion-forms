@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style-register.css" />
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <div class="title-descuento">
+      <p>20% de descuento en todos los productos!</p>
+    </div>
+    <header>
+      <div class="title">
+        <img src="./img/tienda.png" alt="Imagen de tienda online" />
+        <h1>Tienda de cards</h1>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Registro</h2>
+        <form action="./super-cards.html" method="GET">
+          <div>
+            <label for="nombreYApellido"></label>
+            <input
+              type="text"
+              name="nombreYApellido"
+              id="nombreYApellido"
+              placeholder="Nombre y Apellido"
+              class="inputs-form"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo Electrónico"
+              class="inputs-form"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="password"></label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+              class="inputs-form"
+              required
+            />
+          </div>
+
+          <div>
+            <select name="pais" class="inputs-form select-customer" placeholder="País" required>
+              <option selected disabled hidden>País</option>
+              <option value="AR">Argentina</option>
+              <option value="AU">Australia</option>
+              <option value="AT">Austria</option>
+              <option value="AZ">Azerbaiyán</option>
+              <option value="BS">Bahamas</option>
+              <option value="BE">Bélgica</option>
+              <option value="BR">Brasil</option>
+              <option value="CA">Canadá</option>
+              <option value="CL">Chile</option>
+              <option value="CN">China</option>
+              <option value="CO">Colombia</option>
+              <option value="KR">Corea</option>
+              <option value="CR">Costa Rica</option>
+              <option value="HR">Croacia (Hrvatska)</option>
+              <option value="CU">Cuba</option>
+              <option value="DK">Dinamarca</option>
+              <option value="EC">Ecuador</option>
+            </select>
+          </div>
+
+          <div>
+            <input type="reset" value="Resetear" class="inputs-button input-reset"/>
+            <input type="submit" value="Entrar" class="inputs-button input-submit" />
+          </div>
+          <div>
+            <a href="./index.html">
+              <p>¿Ya tenés una cuenta? <span>Ingresá</span></p>
+            </a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Todos los derechos reservados a FRONT END 1</h3>
+    </footer>
+  </body>
+</html>
